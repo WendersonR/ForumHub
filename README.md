@@ -47,14 +47,16 @@ Exemplo de Resposta:
   "token": "eyJhbGciOiJIUzI1NiIsIn..."
 }
 
+Resposta:
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsIn..."
+}
+
 **📄 Listar Tópicos**
+
 GET /topicos
-
-Exemplo de resposta:
-
-json
-Copiar código
-
+[
   {
     "id": 1,
     "titulo": "Dúvida sobre Spring",
@@ -62,14 +64,12 @@ Copiar código
     "dataCriacao": "2025-08-01T12:00:00",
     "status": "NAO_RESPONDIDO"
   }
-
+]
 
 **➕ Cadastrar Tópico**
 
 POST /topicos
 
-json
-Copiar código
 {
   "titulo": "Erro 403 ao autenticar",
   "mensagem": "Não consigo acessar a rota protegida",
@@ -77,40 +77,41 @@ Copiar código
   "status": "NAO_RESPONDIDO",
   "autor": {
     "id": 1
-  }
-
+  },
   "curso": {
     "id": 1
   }
 }
 
- **🔍 Detalhar Tópico**
+**🔍 Detalhar Tópico**
+
 GET /topicos/{id}
 
 **✏️ Atualizar Tópico**
+
 PUT /topicos/{id}
 
-json
 {
   "titulo": "Erro 403 corrigido",
   "mensagem": "Atualizei a autenticação e funcionou"
 }
 
 **❌ Deletar Tópico**
+
 DELETE /topicos/{id}
 
 **🚀 Como rodar o projeto**
-Clone o projeto
+
+*Clone o projeto*
 git clone https://github.com/WendersonR/ForumHub
 
 Configure o application.properties com seu banco MySQL:
 
-ini
-Copiar código
 spring.datasource.url=jdbc:mysql://localhost:3306/forumhub
 spring.datasource.username=root
 spring.datasource.password=suasenha
-Rode o projeto:
+
+*Rode o projeto:*
 
 Via IDE: Run Application
 
@@ -119,7 +120,8 @@ Via terminal:
 mvnw.cmd spring-boot:run (Windows)
 
 **🧪 Exemplos de Teste no Insomnia**
-Login
+
+*Login*
 Rota: POST /login
 
 Corpo: JSON (login/senha)
@@ -131,6 +133,7 @@ Adicione Header:
 Authorization: Bearer <TOKEN_RECEBIDO_DO_LOGIN>
 
 **✅ Requisitos**
+
 Java 17+
 
 MySQL 8+
@@ -138,4 +141,5 @@ MySQL 8+
 Maven 3+
 
 **📄 Licença**
+
 Este projeto é livre para fins educacionais.

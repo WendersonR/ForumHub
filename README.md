@@ -47,7 +47,7 @@ Exemplo de Resposta:
   "token": "eyJhbGciOiJIUzI1NiIsIn..."
 }
 
-**### 📄 Listar Tópicos**
+### 📄 Listar Tópicos
 GET /topicos
 
 Exemplo de resposta:
@@ -64,7 +64,7 @@ Copiar código
   }
 
 
-**### ➕ Cadastrar Tópico**
+### ➕ Cadastrar Tópico
 
 POST /topicos
 
@@ -84,10 +84,10 @@ Copiar código
   }
 }
 
-**### 🔍 Detalhar Tópico**
+### 🔍 Detalhar Tópico
 GET /topicos/{id}
 
-**### ✏️ Atualizar Tópico**
+### ✏️ Atualizar Tópico
 PUT /topicos/{id}
 
 json
@@ -96,10 +96,10 @@ json
   "mensagem": "Atualizei a autenticação e funcionou"
 }
 
-**### ❌ Deletar Tópico**
+### ❌ Deletar Tópico
 DELETE /topicos/{id}
 
-**### 🚀 Como rodar o projeto**
+### 🚀 Como rodar o projeto
 Clone o projeto
 git clone https://github.com/WendersonR/ForumHub
 
@@ -118,7 +118,7 @@ Via terminal:
 ./mvnw spring-boot:run (Linux/Mac)
 mvnw.cmd spring-boot:run (Windows)
 
-**### 🧪 Exemplos de Teste no Insomnia**
+### 🧪 Exemplos de Teste no Insomnia
 Login
 Rota: POST /login
 
@@ -130,12 +130,12 @@ Rotas protegidas
 Adicione Header:
 Authorization: Bearer <TOKEN_RECEBIDO_DO_LOGIN>
 
-**### ✅ Requisitos**
+### ✅ Requisitos
 Java 17+
 
 MySQL 8+
 
 Maven 3+
 
-**### 📄 Licença**
+### 📄 Licença
 Este projeto é livre para fins educacionais.

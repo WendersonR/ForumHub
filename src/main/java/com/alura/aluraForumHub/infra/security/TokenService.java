@@ -17,6 +17,8 @@ public class TokenService {
     @Value("${forum.jwt.expiration}")
     private Long expiration;
 
+    private SecretKey key = Keys.secretKeyFor(SignatureAlgorithm.HS256);
+
     public String gerarToken(String login) {
         Date agora = new Date();
         Date dataExpiracao = new Date(agora.getTime() + expiration);
@@ -50,4 +52,5 @@ public class TokenService {
         return claims.getSubject();
     }
 }
+
 

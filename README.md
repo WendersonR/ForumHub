@@ -1,7 +1,7 @@
-#**ForumHub 🧠**
+**ForumHub 🧠**
 Um sistema de fórum de discussão criado com Spring Boot, que permite o cadastro, listagem, detalhamento, atualização e exclusão de tópicos. Inclui autenticação via login e geração de token JWT.
 
-##**🛠 Tecnologias**
+**🛠 Tecnologias**
 Java 17
 
 Spring Boot
@@ -20,7 +20,7 @@ Lombok
 
 Swagger (documentação da API)
 
-##**⚙️ Funcionalidades**
+**⚙️ Funcionalidades**
 Cadastro de usuários
 
 Login com autenticação JWT
@@ -37,8 +37,8 @@ Exclusão de tópicos
 
 Integração com Swagger para documentação da API
 
-##**📦 Endpoints da API**
-##**🔐 Login**
+**📦 Endpoints da API**
+**🔐 Login**
 POST /login
 
 Request:
@@ -47,31 +47,31 @@ Request:
 Resposta:
 { "token": "eyJhbGciOiJIUzI1NiIsIn..." }
 
-##***📄 Listar Tópicos***
+***📄 Listar Tópicos***
 GET /topicos
 
 Resposta:
 [ { "id": 1, "titulo": "Dúvida sobre Spring", "mensagem": "Como funciona o contexto do Spring?", "dataCriacao": "2025-08-01T12:00:00", "status": "NAO_RESPONDIDO" } ]
 
-##***➕ Cadastrar Tópico***
+***➕ Cadastrar Tópico***
 POST /topicos
 
 Request:
 { "titulo": "Erro 403 ao autenticar", "mensagem": "Não consigo acessar a rota protegida", "dataCriacao": "2025-08-01T15:30:00", "status": "NAO_RESPONDIDO", "autor": { "id": 1 }, "curso": { "id": 1 } }
 
-##***🔍 Detalhar Tópico***
+***🔍 Detalhar Tópico***
 GET /topicos/{id}
 
-##***✏️ Atualizar Tópico***
+***✏️ Atualizar Tópico***
 PUT /topicos/{id}
 
 Request:
 { "titulo": "Erro 403 corrigido", "mensagem": "Atualizei a autenticação e funcionou" }
 
-##***❌ Deletar Tópico***
+***❌ Deletar Tópico***
 DELETE /topicos/{id}
 
-##***🚀 Como rodar o projeto***
+***🚀 Como rodar o projeto***
 Clone o projeto:
 git clone https://github.com/WendersonR/ForumHub
 
